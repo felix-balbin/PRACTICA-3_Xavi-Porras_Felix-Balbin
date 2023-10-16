@@ -1,0 +1,43 @@
+/*1. color general de la lletra negra*/
+*{
+    color: black;
+}
+
+/*2. titol nivell 1 fons blanc lletra gris*/
+#titol-pagina{
+    background-color: white;
+    color: gray;
+}
+
+/*3. tots els strong en color verd i subratllats*/
+.paragraf1 strong , .paragraf2 strong{
+    color: green;
+    text-decoration: underline;
+
+}
+
+
+
+/*4. enllaços del paràgraf2 en italica*/
+.paragraf2 a{
+    font-style: italic;
+    text-decoration: underline;
+}
+
+/*5. footer general del web centrat i lletra de 10px*/
+div > footer{
+    text-align: center;
+    font-size: 10px;
+}
+
+/*6. Canvia l'ordre de càrrega dels fitxers i mira què passa. Sabries modificar el teu codi per a que se seguís veient igual que abans de canviar l'ordre?*/
+
+/*a. Els elements que canvien són els strongs, que pasen de estar de color verd a color blau. La resta d'elements es continua 
+veient igual perquè seleccionem un objecte de forma més específica. Quan un fitxer està per sobre l'altra, s'aplica aquest*/
+
+/*b. El css que proposem perquè no hi hagi canvis es aquest:
+div .paragraf2 strong{
+    color: green;
+}
+
+Fent aixó especifiquem més el selector i aixó li dona més prioritat*/
